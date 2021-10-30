@@ -10,7 +10,7 @@ import tienda_disfraces.reto3.repositorio.Crud.CategoriaCrudRepositorio;
 import tienda_disfraces.reto3.modelo.Categoria;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @Repository
 public class CategoriaRepositorio {

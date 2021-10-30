@@ -11,7 +11,7 @@ import tienda_disfraces.reto3.repositorio.Crud.ClienteCrudRepositorio;
 
 /**
  *
- * @author Andres Mejia
+ * @author gx
  */
 @Repository
 public class ClienteRepositorio {

@@ -22,7 +22,7 @@ import tienda_disfraces.reto3.servicios.ClienteServicios;
 
 /**
  *
- * @author Andres Mejia
+ * @author gx
  */
 @RestController
 @RequestMapping("/api/Client")

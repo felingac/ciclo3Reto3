@@ -10,7 +10,7 @@ import tienda_disfraces.reto3.modelo.Categoria;
 import tienda_disfraces.reto3.repositorio.CategoriaRepositorio;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @Service
 public class CategoriaServicios {
@@ -36,7 +36,7 @@ public class CategoriaServicios {
             return categoriaRepositorio.save(categoria);
         }else{
             Optional<Categoria> paux=categoriaRepositorio.getCategoria(categoria.getId());
-            if(paux.isEmpty()){
+            if(paux == null){
                 return categoriaRepositorio.save(categoria);
             }else{
                 return categoria;
@@ -50,7 +50,7 @@ public class CategoriaServicios {
     public Categoria update(Categoria categoria){
         if(categoria.getId()!=null){
             Optional<Categoria>g=categoriaRepositorio.getCategoria(categoria.getId());
-            if(!g.isEmpty()){
+            if(g != null){
                 if(categoria.getName()!=null){
                     g.get().setName(categoria.getName());
                 }

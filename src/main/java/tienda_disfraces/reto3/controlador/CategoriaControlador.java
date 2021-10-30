@@ -11,7 +11,7 @@ import tienda_disfraces.reto3.modelo.Categoria;
 import tienda_disfraces.reto3.servicios.CategoriaServicios;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @RestController
 @RequestMapping("/api/Category")

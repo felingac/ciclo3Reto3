@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
- * @autor Andres Mejia
+ * @autor gx
  */
 
 @Entity

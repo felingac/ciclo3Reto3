@@ -10,7 +10,7 @@ import tienda_disfraces.reto3.repositorio.Crud.MensajeCrudRepositorio;
 import tienda_disfraces.reto3.modelo.Mensaje;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @Repository
 public class MensajeRepositorio {

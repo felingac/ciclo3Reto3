@@ -16,7 +16,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author GRUPO 6
+ * @author gx
  */
 
 @Entity

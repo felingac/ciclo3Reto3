@@ -8,7 +8,7 @@ import javax.persistence.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @Entity
 @Table(name="category")

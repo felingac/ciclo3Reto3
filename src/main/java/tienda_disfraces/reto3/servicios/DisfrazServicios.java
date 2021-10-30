@@ -28,7 +28,7 @@ public class DisfrazServicios {
             return disfrazRepositorio.save(disfraz);
         }else{
             Optional<Disfraz> disAux=disfrazRepositorio.getDisfraz(disfraz.getId());
-            if (disAux.isEmpty()){
+            if (disAux == null){
                 return disfrazRepositorio.save(disfraz);
             } else{
                 return disfraz;
@@ -39,7 +39,9 @@ public class DisfrazServicios {
     public Disfraz update(Disfraz disfraz){
         if(disfraz.getId()!=null){
             Optional<Disfraz> e=disfrazRepositorio.getDisfraz(disfraz.getId());
-            if(!e.isEmpty()){
+            if(e != null){
+                return disfraz;
+            }else{
                 if(disfraz.getName()!=null){
                     e.get().setName(disfraz.getName());
                 }
@@ -55,8 +57,6 @@ public class DisfrazServicios {
 
                 disfrazRepositorio.save(e.get());
                 return e.get();
-            }else{
-                return disfraz;
             }
         }else{
             return disfraz;

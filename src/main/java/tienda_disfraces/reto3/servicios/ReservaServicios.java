@@ -26,7 +26,7 @@ public class ReservaServicios {
             return reservaRepositorio.save(reservation);
         } else {
             Optional<Reserva> raux = reservaRepositorio.getReserva(reservation.getIdReservation());
-            if (raux.isEmpty()) {
+            if (raux == null) {
                 return reservaRepositorio.save(reservation);
             } else {
                 return reservation;
@@ -38,7 +38,7 @@ public class ReservaServicios {
     public Reserva update(Reserva reserva){
         if(reserva.getIdReservation()!=null){
             Optional<Reserva> e= reservaRepositorio.getReserva(reserva.getIdReservation());
-            if(!e.isEmpty()){
+            if(e != null){
 
                 if(reserva.getStartDate()!=null){
                     e.get().setStartDate(reserva.getStartDate());

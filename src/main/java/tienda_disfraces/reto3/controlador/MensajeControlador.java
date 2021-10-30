@@ -11,7 +11,7 @@ import tienda_disfraces.reto3.modelo.Mensaje;
 import tienda_disfraces.reto3.servicios.MensajeServicios;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 @RestController
 @RequestMapping("/api/Message")

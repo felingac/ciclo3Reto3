@@ -5,7 +5,7 @@ import tienda_disfraces.reto3.modelo.Mensaje;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @autor gx
  */
 public interface MensajeCrudRepositorio extends CrudRepository <Mensaje,Integer>{
     

@@ -11,7 +11,7 @@ import tienda_disfraces.reto3.repositorio.ClienteRepositorio;
 
 /**
  *
- * @author Andres Mejia
+ * @author gx
  */
 
 @Service
@@ -32,7 +32,7 @@ public class ClienteServicios {
             return metodosCrud.save(client);
         } else {
             Optional<Cliente> e = metodosCrud.getCliente(client.getIdClient());
-            if (e.isEmpty()) {
+            if (e == null) {
                 return metodosCrud.save(client);
             } else {
                 return client;
@@ -43,7 +43,7 @@ public class ClienteServicios {
     public Cliente update(Cliente client) {
         if (client.getIdClient() != null) {
             Optional<Cliente> e = metodosCrud.getCliente(client.getIdClient());
-            if (!e.isEmpty()) {
+            if (e != null) {
                 if (client.getName() != null) {
                     e.get().setName(client.getName());
                 }
